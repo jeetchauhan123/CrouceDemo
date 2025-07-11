@@ -108,6 +108,30 @@ button:hover {
   gap: 1rem;
 }
 
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+}
+
+.nav-logout{
+  width: fit-content;
+  font-size: large;
+  font-weight: bold;
+}
+
+.nav-title {
+  font-size: 1.9rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
 .modules-section {
   margin-top: 20px;
 }
@@ -132,11 +156,6 @@ button:hover {
   overflow-y: auto;
 }
 
-.sidebar-title {
-  margin-bottom: 20px;
-  font-size: 20px;
-  color: #0056d2;
-}
 
 .module {
   margin-bottom: 15px;
