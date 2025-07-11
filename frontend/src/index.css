@@ -26,8 +26,7 @@ html {
 }
 
 /* Card styling */
-.login-card,
-.welcome-card {
+.login-card{
   background: #fff;
   padding: 2rem 2.5rem;
   border-radius: 15px;
@@ -87,4 +86,102 @@ button:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+.welcome-card {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 90%;
+  /* max-width: 400px; */
+  animation: fadeIn 0.5s ease-in-out;
+  word-break: break-word;
+}
+
+.welcome-flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modules-section {
+  margin-top: 20px;
+}
+
+.module-card {
+  background-color: #f9fafc;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #0056d2;
+  border-radius: 4px;
+}
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #0056d2;
+}
+
+.module {
+  margin-bottom: 15px;
+}
+
+.module-title {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #eef2f8;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.module-title:hover {
+  background-color: #dde7f2;
+}
+
+.chapters {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-left: 10px;
+}
+
+.chapters.open {
+  max-height: 500px;
+  margin-top: 10px;
+}
+
+.chapter {
+  padding: 6px 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.chapter:hover {
+  background-color: #f5faff;
+  border-left: 3px solid #0056d2;
+}
+
+.video-area {
+  flex-grow: 1;
+  background-color: #f9fbfd;
+  padding: 20px;
 }

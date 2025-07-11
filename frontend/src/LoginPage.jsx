@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 
-const allowedUsers = ['shrey@gmail.com', 'hritik@gmail.com', 'jeet@gmail.com'];
+const allowedUsers = ['shrey@gmail.com', 'jeet@gmail.com', 'hritik@gmail.com'];
 
 const LoginPage = ({ setUser }) => {
   const [email, setEmail] = useState('');
@@ -40,7 +40,7 @@ const LoginPage = ({ setUser }) => {
         />
         <input
           type="password"
-          placeholder="Password (e.g., name123)"
+          placeholder="Password"
           required
           value={password}
           onChange={(e) => setPassword(e.target.value)}
